@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potatoes and Porkchops | AudioBite</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img">
+                <div class="logo-text">AudioBite</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="AudioBites.html">Home</a></li>
+                    <li><a href="AudioBitesCat.html">Categories</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Potatoes and Porkchops</h1>
+            <div class="recipe-meta">50 min • Hearty • 4.7★</div>
+            <img src="Images/potatoes-porkchops.jpg" alt="Potatoes and Porkchops" class="recipe-image">
+        </div>
+
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>4 bone-in pork chops</li>
+                <li>5 medium potatoes, sliced</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tsp garlic powder</li>
+                <li>1 tsp paprika</li>
+                <li>Salt and black pepper to taste</li>
+                <li>1 tbsp fresh rosemary or thyme</li>
+                <li>2 tbsp butter</li>
+                <li>1/2 cup chicken broth (optional for moisture)</li>
+            </ul>
+        </div>
+
+        <div class="audio-player">
+            <button class="play-btn" id="playButton">▶ Play Recipe</button>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="time-display">
+                <span class="current-time" id="currentTime">0:00</span>
+                <span class="duration" id="duration">3:10</span>
+            </div>
+        </div>
+
+        <div class="recipe-text" id="recipeText">
+            <p><span class="word">Preheat</span> <span class="word">oven</span> <span class="word">to</span> <span class="word">400°F</span> <span class="word">(200°C).</span></p>
+            <p><span class="word">Season</span> <span class="word">pork</span> <span class="word">chops</span> <span class="word">with</span> <span class="word">salt,</span> <span class="word">pepper,</span> <span class="word">garlic</span> <span class="word">powder,</span> <span class="word">and</span> <span class="word">paprika.</span></p>
+            <p><span class="word">Heat</span> <span class="word">olive</span> <span class="word">oil</span> <span class="word">in</span> <span class="word">a</span> <span class="word">skillet</span> <span class="word">and</span> <span class="word">sear</span> <span class="word">the</span> <span class="word">pork</span> <span class="word">chops</span> <span class="word">2–3</span> <span class="word">minutes</span> <span class="word">per</span> <span class="word">side.</span></p>
+            <p><span class="word">Set</span> <span class="word">aside.</span></p>
+            <p><span class="word">In</span> <span class="word">a</span> <span class="word">baking</span> <span class="word">dish,</span> <span class="word">layer</span> <span class="word">potato</span> <span class="word">slices,</span> <span class="word">seasoned</span> <span class="word">lightly</span> <span class="word">with</span> <span class="word">salt</span> <span class="word">and</span> <span class="word">rosemary.</span></p>
+            <p><span class="word">Dot</span> <span class="word">with</span> <span class="word">butter.</span> <span class="word">Add</span> <span class="word">a</span> <span class="word">splash</span> <span class="word">of</span> <span class="word">chicken</span> <span class="word">broth</span> <span class="word">if</span> <span class="word">desired.</span></p>
+            <p><span class="word">Place</span> <span class="word">pork</span> <span class="word">chops</span> <span class="word">on</span> <span class="word">top.</span></p>
+            <p><span class="word">Cover</span> <span class="word">with</span> <span class="word">foil</span> <span class="word">and</span> <span class="word">bake</span> <span class="word">for</span> <span class="word">30</span> <span class="word">minutes,</span> <span class="word">then</span> <span class="word">uncover</span> <span class="word">and</span> <span class="word">bake</span> <span class="word">another</span> <span class="word">10–15</span> <span class="word">minutes</span> <span class="word">until</span> <span class="word">golden.</span></p>
+            <p><span class="word">Serve</span> <span class="word">hot,</span> <span class="word">straight</span> <span class="word">from</span> <span class="word">the</span> <span class="word">oven!</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+    </footer>
+
+    <script src="audio.js"></script>
+</body>
+</html>
