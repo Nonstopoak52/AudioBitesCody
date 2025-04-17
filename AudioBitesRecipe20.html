@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Pancakes | AudioBite</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img">
+                <div class="logo-text">AudioBite</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="AudioBites.html">Home</a></li>
+                    <li><a href="AudioBitesCat.html">Categories</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Chocolate Pancakes</h1>
+            <div class="recipe-meta">25 min • Easy • 4.8★</div>
+            <img src="Images/chocolate-pancakes.jpg" alt="Stack of chocolate pancakes with syrup" class="recipe-image">
+        </div>
+
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 cup all-purpose flour</li>
+                <li>1/4 cup cocoa powder</li>
+                <li>1/4 cup sugar</li>
+                <li>1 tsp baking powder</li>
+                <li>1/2 tsp baking soda</li>
+                <li>1/4 tsp salt</li>
+                <li>1 cup milk</li>
+                <li>1 egg</li>
+                <li>2 tbsp melted butter</li>
+                <li>1 tsp vanilla extract</li>
+                <li>Chocolate chips (optional)</li>
+            </ul>
+        </div>
+
+        <div class="audio-player">
+            <audio id="audio" src="recipe20.mp3"></audio>
+            <button class="play-btn" id="playButton">▶ Play Recipe</button>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="time-display">
+                <span class="current-time" id="currentTime">0:00</span>
+                <span class="duration" id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="recipe-text" id="recipeText">
+            <p><span class="word">In</span> <span class="word">a</span> <span class="word">large</span> <span class="word">bowl,</span> <span class="word">whisk</span> <span class="word">together</span> <span class="word">flour,</span> <span class="word">cocoa</span> <span class="word">powder,</span> <span class="word">sugar,</span> <span class="word">baking</span> <span class="word">powder,</span> <span class="word">baking</span> <span class="word">soda,</span> <span class="word">and</span> <span class="word">salt.</span></p>
+            <p><span class="word">In</span> <span class="word">another</span> <span class="word">bowl,</span> <span class="word">mix</span> <span class="word">milk,</span> <span class="word">egg,</span> <span class="word">melted</span> <span class="word">butter,</span> <span class="word">and</span> <span class="word">vanilla.</span></p>
+            <p><span class="word">Combine</span> <span class="word">wet</span> <span class="word">and</span> <span class="word">dry</span> <span class="word">ingredients</span> <span class="word">until</span> <span class="word">just</span> <span class="word">blended.</span></p>
+            <p><span class="word">Fold</span> <span class="word">in</span> <span class="word">chocolate</span> <span class="word">chips</span> <span class="word">if</span> <span class="word">desired.</span></p>
+            <p><span class="word">Heat</span> <span class="word">a</span> <span class="word">non-stick</span> <span class="word">skillet</span> <span class="word">over</span> <span class="word">medium</span> <span class="word">heat.</span></p>
+            <p><span class="word">Pour</span> <span class="word">batter</span> <span class="word">to</span> <span class="word">form</span> <span class="word">pancakes.</span></p>
+            <p><span class="word">Cook</span> <span class="word">until</span> <span class="word">bubbles</span> <span class="word">form,</span> <span class="word">flip,</span> <span class="word">and</span> <span class="word">cook</span> <span class="word">until</span> <span class="word">done.</span></p>
+            <p><span class="word">Serve</span> <span class="word">warm</span> <span class="word">with</span> <span class="word">syrup</span> <span class="word">or</span> <span class="word">whipped</span> <span class="word">cream.</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+    </footer>
+
+    <script src="audio.js" defer></script>
+</body>
+</html>

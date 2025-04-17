@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strawberry Cheesecake | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Strawberry Cheesecake</h1>
+      <div class="recipe-meta">1.5 hrs • Intermediate • 4.9★</div>
+      <img src="Images/strawberry-cheesecake.jpeg" alt="Strawberry cheesecake topped with glaze and fresh berries" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 1/2 cups graham cracker crumbs</li>
+        <li>1/4 cup melted butter</li>
+        <li>2 cups cream cheese</li>
+        <li>3/4 cup sugar</li>
+        <li>3 eggs</li>
+        <li>1 tsp vanilla extract</li>
+        <li>1/2 cup sour cream</li>
+        <li>1 cup fresh strawberries</li>
+        <li>1/4 cup strawberry glaze or jam</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe23.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Preheat</span> <span class="word">your</span> <span class="word">oven</span> <span class="word">to</span> <span class="word">325°F</span> <span class="word">(163°C).</span></p>
+      <p><span class="word">Mix</span> <span class="word">graham</span> <span class="word">cracker</span> <span class="word">crumbs</span> <span class="word">and</span> <span class="word">melted</span> <span class="word">butter.</span></p>
+      <p><span class="word">Press</span> <span class="word">into</span> <span class="word">a</span> <span class="word">springform</span> <span class="word">pan</span> <span class="word">to</span> <span class="word">form</span> <span class="word">the</span> <span class="word">crust.</span></p>
+      <p><span class="word">In</span> <span class="word">a</span> <span class="word">bowl,</span> <span class="word">beat</span> <span class="word">cream</span> <span class="word">cheese</span> <span class="word">and</span> <span class="word">sugar</span> <span class="word">until</span> <span class="word">smooth.</span></p>
+      <p><span class="word">Add</span> <span class="word">eggs</span> <span class="word">one</span> <span class="word">at</span> <span class="word">a</span> <span class="word">time,</span> <span class="word">beating</span> <span class="word">well</span> <span class="word">after</span> <span class="word">each.</span></p>
+      <p><span class="word">Mix</span> <span class="word">in</span> <span class="word">vanilla</span> <span class="word">and</span> <span class="word">sour</span> <span class="word">cream.</span></p>
+      <p><span class="word">Pour</span> <span class="word">filling</span> <span class="word">over</span> <span class="word">the</span> <span class="word">crust</span> <span class="word">and</span> <span class="word">smooth</span> <span class="word">the</span> <span class="word">top.</span></p>
+      <p><span class="word">Bake</span> <span class="word">for</span> <span class="word">1</span> <span class="word">hour,</span> <span class="word">then</span> <span class="word">turn</span> <span class="word">off</span> <span class="word">oven</span> <span class="word">and</span> <span class="word">leave</span> <span class="word">inside</span> <span class="word">for</span> <span class="word">30</span> <span class="word">minutes.</span></p>
+      <p><span class="word">Cool</span> <span class="word">completely</span> <span class="word">and</span> <span class="word">chill</span> <span class="word">for</span> <span class="word">4</span> <span class="word">hours.</span></p>
+      <p><span class="word">Top</span> <span class="word">with</span> <span class="word">strawberry</span> <span class="word">glaze</span> <span class="word">and</span> <span class="word">fresh</span> <span class="word">strawberries.</span></p>
+      <p><span class="word">Slice</span> <span class="word">and</span> <span class="word">enjoy!</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

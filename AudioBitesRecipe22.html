@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cake Pops | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Cake Pops</h1>
+      <div class="recipe-meta">1 hr • Moderate • 4.8★</div>
+      <img src="Images/cake-pops.jpg" alt="Decorated cake pops on sticks" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 baked cake (any flavor)</li>
+        <li>1/2 cup frosting</li>
+        <li>Candy melts or chocolate for coating</li>
+        <li>Sprinkles or decorations</li>
+        <li>Lollipop sticks</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe22.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Crumble</span> <span class="word">the</span> <span class="word">baked</span> <span class="word">cake</span> <span class="word">into</span> <span class="word">a</span> <span class="word">large</span> <span class="word">bowl.</span></p>
+      <p><span class="word">Add</span> <span class="word">frosting</span> <span class="word">a</span> <span class="word">spoonful</span> <span class="word">at</span> <span class="word">a</span> <span class="word">time,</span> <span class="word">mixing</span> <span class="word">until</span> <span class="word">the</span> <span class="word">texture</span> <span class="word">is</span> <span class="word">like</span> <span class="word">dough.</span></p>
+      <p><span class="word">Roll</span> <span class="word">into</span> <span class="word">balls</span> <span class="word">and</span> <span class="word">chill</span> <span class="word">for</span> <span class="word">30</span> <span class="word">minutes.</span></p>
+      <p><span class="word">Melt</span> <span class="word">candy</span> <span class="word">coating</span> <span class="word">or</span> <span class="word">chocolate</span> <span class="word">according</span> <span class="word">to</span> <span class="word">package</span> <span class="word">instructions.</span></p>
+      <p><span class="word">Dip</span> <span class="word">each</span> <span class="word">stick</span> <span class="word">into</span> <span class="word">melted</span> <span class="word">chocolate,</span> <span class="word">then</span> <span class="word">insert</span> <span class="word">into</span> <span class="word">a</span> <span class="word">cake</span> <span class="word">ball.</span></p>
+      <p><span class="word">Dip</span> <span class="word">cake</span> <span class="word">balls</span> <span class="word">into</span> <span class="word">the</span> <span class="word">melted</span> <span class="word">coating</span> <span class="word">and</span> <span class="word">let</span> <span class="word">excess</span> <span class="word">drip</span> <span class="word">off.</span></p>
+      <p><span class="word">Add</span> <span class="word">sprinkles</span> <span class="word">before</span> <span class="word">it</span> <span class="word">hardens.</span></p>
+      <p><span class="word">Let</span> <span class="word">them</span> <span class="word">set,</span> <span class="word">serve,</span> <span class="word">and</span> <span class="word">enjoy!</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

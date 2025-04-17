@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Honey-Lavender Lemonade | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Honey-Lavender Lemonade</h1>
+      <div class="recipe-meta">30 mins • Easy • 5★</div>
+      <img src="Images/honey-lavender-lemonade.jpg" alt="Glass of honey-lavender lemonade" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1/4 cup dried lavender flowers</li>
+        <li>1/2 cup honey</li>
+        <li>1 1/2 cups freshly squeezed lemon juice (about 6 lemons)</li>
+        <li>4 cups cold water</li>
+        <li>Ice cubes</li>
+        <li>Lemon slices and lavender sprigs for garnish</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe30.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">In</span> <span class="word">a</span> <span class="word">small</span> <span class="word">saucepan,</span> <span class="word">combine</span> <span class="word">lavender</span> <span class="word">flowers</span> <span class="word">and</span> <span class="word">1/2</span> <span class="word">cup</span> <span class="word">water.</span></p>
+      <p><span class="word">Bring</span> <span class="word">to</span> <span class="word">a</span> <span class="word">boil,</span> <span class="word">then</span> <span class="word">lower</span> <span class="word">heat</span> <span class="word">and</span> <span class="word">simmer</span> <span class="word">for</span> <span class="word">10</span> <span class="word">minutes.</span></p>
+      <p><span class="word">Strain</span> <span class="word">out</span> <span class="word">lavender,</span> <span class="word">then</span> <span class="word">stir</span> <span class="word">in</span> <span class="word">honey.</span></p>
+      <p><span class="word">In</span> <span class="word">a</span> <span class="word">pitcher,</span> <span class="word">combine</span> <span class="word">lemon</span> <span class="word">juice,</span> <span class="word">lavender</span> <span class="word">honey</span> <span class="word">mixture,</span> <span class="word">and</span> <span class="word">remaining</span> <span class="word">water.</span></p>
+      <p><span class="word">Add</span> <span class="word">ice</span> <span class="word">cubes,</span> <span class="word">garnish</span> <span class="word">with</span> <span class="word">lemon</span> <span class="word">slices</span> <span class="word">and</span> <span class="word">lavender</span> <span class="word">sprigs.</span></p>
+      <p><span class="word">Serve</span> <span class="word">chilled</span> <span class="word">and</span> <span class="word">enjoy!</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

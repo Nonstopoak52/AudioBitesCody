@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spaghetti Aglio e Olio | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Spaghetti Aglio e Olio</h1>
+      <div class="recipe-meta">20 mins • Easy • 5★</div>
+      <img src="Images/spaghetti-aglio-e-olio.jpeg" alt="Plate of Spaghetti Aglio e Olio" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>400g spaghetti</li>
+        <li>6 cloves garlic (sliced thin)</li>
+        <li>1/4 cup extra virgin olive oil</li>
+        <li>1/4 teaspoon red pepper flakes</li>
+        <li>Salt to taste</li>
+        <li>Fresh parsley (chopped)</li>
+        <li>Grated parmesan (optional)</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe32.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Cook</span> <span class="word">spaghetti</span> <span class="word">in</span> <span class="word">boiling</span> <span class="word">salted</span> <span class="word">water</span> <span class="word">for</span> <span class="word">8-10</span> <span class="word">minutes.</span></p>
+      <p><span class="word">In</span> <span class="word">a</span> <span class="word">pan,</span> <span class="word">heat</span> <span class="word">olive</span> <span class="word">oil</span> <span class="word">over</span> <span class="word">medium</span> <span class="word">heat.</span></p>
+      <p><span class="word">Add</span> <span class="word">garlic</span> <span class="word">and</span> <span class="word">red</span> <span class="word">pepper</span> <span class="word">flakes,</span> <span class="word">cook</span> <span class="word">until</span> <span class="word">golden.</span></p>
+      <p><span class="word">Toss</span> <span class="word">spaghetti</span> <span class="word">with</span> <span class="word">oil</span> <span class="word">and</span> <span class="word">garlic.</span></p>
+      <p><span class="word">Garnish</span> <span class="word">with</span> <span class="word">parsley</span> <span class="word">and</span> <span class="word">grated</span> <span class="word">parmesan.</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

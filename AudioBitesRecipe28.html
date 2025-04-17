@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peppermint Bark | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Peppermint Bark</h1>
+      <div class="recipe-meta">30 min • Super Easy • 5★</div>
+      <img src="Images/peppermintbark.jpg" alt="Pieces of peppermint bark" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>12 oz dark chocolate (chopped or chips)</li>
+        <li>12 oz white chocolate (chopped or chips)</li>
+        <li>1/2 tsp peppermint extract</li>
+        <li>6–8 peppermint candies or candy canes (crushed)</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe28.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Line</span> <span class="word">a</span> <span class="word">baking</span> <span class="word">sheet</span> <span class="word">with</span> <span class="word">parchment</span> <span class="word">paper.</span></p>
+      <p><span class="word">Melt</span> <span class="word">the</span> <span class="word">dark</span> <span class="word">chocolate</span> <span class="word">in</span> <span class="word">a</span> <span class="word">double</span> <span class="word">boiler</span> <span class="word">or</span> <span class="word">microwave</span> <span class="word">until</span> <span class="word">smooth.</span></p>
+      <p><span class="word">Stir</span> <span class="word">in</span> <span class="word">peppermint</span> <span class="word">extract.</span></p>
+      <p><span class="word">Pour</span> <span class="word">onto</span> <span class="word">the</span> <span class="word">prepared</span> <span class="word">sheet</span> <span class="word">and</span> <span class="word">spread</span> <span class="word">evenly.</span></p>
+      <p><span class="word">Refrigerate</span> <span class="word">until</span> <span class="word">set,</span> <span class="word">about</span> <span class="word">15</span> <span class="word">minutes.</span></p>
+      <p><span class="word">Melt</span> <span class="word">the</span> <span class="word">white</span> <span class="word">chocolate.</span> <span class="word">Let</span> <span class="word">it</span> <span class="word">cool</span> <span class="word">slightly,</span> <span class="word">then</span> <span class="word">pour</span> <span class="word">over</span> <span class="word">the</span> <span class="word">dark</span> <span class="word">layer.</span></p>
+      <p><span class="word">Sprinkle</span> <span class="word">crushed</span> <span class="word">peppermints</span> <span class="word">on</span> <span class="word">top.</span></p>
+      <p><span class="word">Chill</span> <span class="word">again</span> <span class="word">until</span> <span class="word">completely</span> <span class="word">firm,</span> <span class="word">then</span> <span class="word">break</span> <span class="word">into</span> <span class="word">pieces.</span></p>
+      <p><span class="word">Festive,</span> <span class="word">minty,</span> <span class="word">and</span> <span class="word">delicious!</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

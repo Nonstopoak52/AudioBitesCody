@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roast Turkey | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Roast Turkey</h1>
+      <div class="recipe-meta">3 hrs • Medium • 5★</div>
+      <img src="Images/roastturkey.jpg" alt="Roast turkey on a platter" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 whole turkey (10–12 lbs)</li>
+        <li>1/2 cup olive oil</li>
+        <li>1 tablespoon salt</li>
+        <li>1 tablespoon black pepper</li>
+        <li>2 teaspoons garlic powder</li>
+        <li>2 teaspoons onion powder</li>
+        <li>2 tablespoons fresh rosemary (chopped)</li>
+        <li>2 tablespoons fresh thyme (chopped)</li>
+        <li>1 lemon (quartered)</li>
+        <li>1 onion (quartered)</li>
+        <li>1 head of garlic (halved)</li>
+        <li>2 cups chicken broth (for basting)</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe29.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Preheat</span> <span class="word">the</span> <span class="word">oven</span> <span class="word">to</span> <span class="word">325°F</span> <span class="word">(163°C).</span></p>
+      <p><span class="word">Pat</span> <span class="word">the</span> <span class="word">turkey</span> <span class="word">dry</span> <span class="word">with</span> <span class="word">paper</span> <span class="word">towels.</span></p>
+      <p><span class="word">Rub</span> <span class="word">the</span> <span class="word">turkey</span> <span class="word">all</span> <span class="word">over</span> <span class="word">with</span> <span class="word">olive</span> <span class="word">oil,</span> <span class="word">salt,</span> <span class="word">pepper,</span> <span class="word">garlic</span> <span class="word">powder,</span> <span class="word">onion</span> <span class="word">powder,</span> <span class="word">rosemary,</span> <span class="word">and</span> <span class="word">thyme.</span></p>
+      <p><span class="word">Stuff</span> <span class="word">the</span> <span class="word">turkey</span> <span class="word">with</span> <span class="word">the</span> <span class="word">lemon,</span> <span class="word">onion,</span> <span class="word">and</span> <span class="word">garlic.</span></p>
+      <p><span class="word">Place</span> <span class="word">the</span> <span class="word">turkey</span> <span class="word">on</span> <span class="word">a</span> <span class="word">roasting</span> <span class="word">rack</span> <span class="word">in</span> <span class="word">a</span> <span class="word">large</span> <span class="word">roasting</span> <span class="word">pan.</span></p>
+      <p><span class="word">Roast</span> <span class="word">the</span> <span class="word">turkey</span> <span class="word">for</span> <span class="word">about</span> <span class="word">3</span> <span class="word">hours,</span> <span class="word">basting</span> <span class="word">with</span> <span class="word">chicken</span> <span class="word">broth</span> <span class="word">every</span> <span class="word">45</span> <span class="word">minutes.</span></p>
+      <p><span class="word">Once</span> <span class="word">the</span> <span class="word">internal</span> <span class="word">temperature</span> <span class="word">reaches</span> <span class="word">165°F</span> <span class="word">(74°C)</span> <span class="word">in</span> <span class="word">the</span> <span class="word">thickest</span> <span class="word">part</span> <span class="word">of</span> <span class="word">the</span> <span class="word">thigh,</span> <span class="word">remove</span> <span class="word">from</span> <span class="word">the</span> <span class="word">oven.</span></p>
+      <p><span class="word">Let</span> <span class="word">the</span> <span class="word">turkey</span> <span class="word">rest</span> <span class="word">for</span> <span class="word">15</span> <span class="word">minutes</span> <span class="word">before</span> <span class="word">carving.</span></p>
+      <p><span class="word">Enjoy</span> <span class="word">your</span> <span class="word">succulent</span> <span class="word">roast</span> <span class="word">turkey!</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

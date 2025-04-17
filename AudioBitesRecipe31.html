@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spicy Mango Salsa | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Spicy Mango Salsa</h1>
+      <div class="recipe-meta">15 mins • Easy • 5★</div>
+      <img src="Images/spicy-mango-salsa.jpg" alt="Fresh mango salsa" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 ripe mangos (diced)</li>
+        <li>1/4 cup red onion (finely chopped)</li>
+        <li>1 small red chili (finely chopped)</li>
+        <li>1/4 cup cilantro (chopped)</li>
+        <li>Juice of 1 lime</li>
+        <li>Salt to taste</li>
+        <li>1/2 teaspoon cumin</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe31.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Combine</span> <span class="word">mango,</span> <span class="word">red</span> <span class="word">onion,</span> <span class="word">chili,</span> <span class="word">and</span> <span class="word">cilantro</span> <span class="word">in</span> <span class="word">a</span> <span class="word">bowl.</span></p>
+      <p><span class="word">Squeeze</span> <span class="word">lime</span> <span class="word">juice</span> <span class="word">over</span> <span class="word">the</span> <span class="word">mixture,</span> <span class="word">then</span> <span class="word">sprinkle</span> <span class="word">with</span> <span class="word">cumin</span> <span class="word">and</span> <span class="word">salt.</span></p>
+      <p><span class="word">Mix</span> <span class="word">gently</span> <span class="word">until</span> <span class="word">combined.</span></p>
+      <p><span class="word">Serve</span> <span class="word">with</span> <span class="word">tortilla</span> <span class="word">chips</span> <span class="word">or</span> <span class="word">grilled</span> <span class="word">meats.</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

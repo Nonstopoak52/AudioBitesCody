@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macaroons | AudioBite</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img">
+                <div class="logo-text">AudioBite</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="AudioBites.html">Home</a></li>
+                    <li><a href="AudioBitesCat.html">Categories</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Macaroons</h1>
+            <div class="recipe-meta">45 min • Intermediate • 4.9★</div>
+            <img src="Images/macaroons.jpg" alt="Colorful Macaroons" class="recipe-image">
+        </div>
+
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 cup almond flour</li>
+                <li>1 3/4 cups powdered sugar</li>
+                <li>3 large egg whites (room temp)</li>
+                <li>1/4 cup granulated sugar</li>
+                <li>Food coloring (optional)</li>
+                <li>Buttercream or ganache filling of choice</li>
+            </ul>
+        </div>
+
+        <div class="audio-player">
+            <audio id="audio" src="recipe19.mp3"></audio>
+            <button class="play-btn" id="playButton">▶ Play Recipe</button>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="time-display">
+                <span class="current-time" id="currentTime">0:00</span>
+                <span class="duration" id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="recipe-text" id="recipeText">
+            <p><span class="word">Sift</span> <span class="word">together</span> <span class="word">almond</span> <span class="word">flour</span> <span class="word">and</span> <span class="word">powdered</span> <span class="word">sugar.</span></p>
+            <p><span class="word">In</span> <span class="word">a</span> <span class="word">separate</span> <span class="word">bowl,</span> <span class="word">whip</span> <span class="word">egg</span> <span class="word">whites</span> <span class="word">until</span> <span class="word">foamy.</span></p>
+            <p><span class="word">Gradually</span> <span class="word">add</span> <span class="word">granulated</span> <span class="word">sugar</span> <span class="word">and</span> <span class="word">beat</span> <span class="word">to</span> <span class="word">stiff</span> <span class="word">peaks.</span></p>
+            <p><span class="word">Fold</span> <span class="word">dry</span> <span class="word">ingredients</span> <span class="word">into</span> <span class="word">egg</span> <span class="word">whites</span> <span class="word">gently.</span></p>
+            <p><span class="word">Add</span> <span class="word">food</span> <span class="word">coloring</span> <span class="word">if</span> <span class="word">desired.</span></p>
+            <p><span class="word">Pipe</span> <span class="word">small</span> <span class="word">rounds</span> <span class="word">onto</span> <span class="word">a</span> <span class="word">baking</span> <span class="word">sheet</span> <span class="word">lined</span> <span class="word">with</span> <span class="word">parchment.</span></p>
+            <p><span class="word">Let</span> <span class="word">sit</span> <span class="word">for</span> <span class="word">30</span> <span class="word">minutes</span> <span class="word">to</span> <span class="word">form</span> <span class="word">a</span> <span class="word">skin.</span></p>
+            <p><span class="word">Bake</span> <span class="word">at</span> <span class="word">300°F</span> <span class="word">for</span> <span class="word">15-17</span> <span class="word">minutes.</span></p>
+            <p><span class="word">Cool,</span> <span class="word">fill,</span> <span class="word">and</span> <span class="word">sandwich.</span> <span class="word">Enjoy!</span></p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+    </footer>
+
+    <script src="audio.js" defer></script>
+</body>
+</html>

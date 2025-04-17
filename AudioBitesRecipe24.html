@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gingerbread Cookies | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Gingerbread Cookies</h1>
+      <div class="recipe-meta">2 hrs • Beginner • 4.8★</div>
+      <img src="Images/gingerbread-cookies.jpg" alt="Decorated gingerbread cookies" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>3 cups all-purpose flour</li>
+        <li>3/4 cup brown sugar</li>
+        <li>3/4 cup molasses</li>
+        <li>1 large egg</li>
+        <li>1/2 cup unsalted butter, softened</li>
+        <li>1 tsp baking soda</li>
+        <li>1/2 tsp salt</li>
+        <li>1 tbsp ground ginger</li>
+        <li>1 tbsp ground cinnamon</li>
+        <li>1/2 tsp ground cloves</li>
+        <li>1/4 tsp nutmeg</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe24.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">In</span> <span class="word">a</span> <span class="word">large</span> <span class="word">bowl,</span> <span class="word">beat</span> <span class="word">together</span> <span class="word">butter</span> <span class="word">and</span> <span class="word">brown</span> <span class="word">sugar</span> <span class="word">until</span> <span class="word">creamy.</span></p>
+      <p><span class="word">Add</span> <span class="word">molasses</span> <span class="word">and</span> <span class="word">egg,</span> <span class="word">and</span> <span class="word">mix</span> <span class="word">well.</span></p>
+      <p><span class="word">In</span> <span class="word">a</span> <span class="word">separate</span> <span class="word">bowl,</span> <span class="word">whisk</span> <span class="word">flour,</span> <span class="word">baking</span> <span class="word">soda,</span> <span class="word">salt,</span> <span class="word">and</span> <span class="word">spices.</span></p>
+      <p><span class="word">Gradually</span> <span class="word">add</span> <span class="word">dry</span> <span class="word">ingredients</span> <span class="word">to</span> <span class="word">the</span> <span class="word">wet</span> <span class="word">mixture.</span></p>
+      <p><span class="word">Form</span> <span class="word">dough</span> <span class="word">into</span> <span class="word">a</span> <span class="word">disk,</span> <span class="word">wrap</span> <span class="word">in</span> <span class="word">plastic,</span> <span class="word">and</span> <span class="word">chill</span> <span class="word">for</span> <span class="word">1</span> <span class="word">hour.</span></p>
+      <p><span class="word">Preheat</span> <span class="word">oven</span> <span class="word">to</span> <span class="word">350°F</span> <span class="word">(175°C).</span></p>
+      <p><span class="word">Roll</span> <span class="word">out</span> <span class="word">dough</span> <span class="word">on</span> <span class="word">a</span> <span class="word">floured</span> <span class="word">surface</span> <span class="word">to</span> <span class="word">1/4-inch</span> <span class="word">thick.</span></p>
+      <p><span class="word">Cut</span> <span class="word">into</span> <span class="word">shapes</span> <span class="word">using</span> <span class="word">cookie</span> <span class="word">cutters.</span></p>
+      <p><span class="word">Place</span> <span class="word">on</span> <span class="word">baking</span> <span class="word">sheet</span> <span class="word">and</span> <span class="word">bake</span> <span class="word">for</span> <span class="word">8–10</span> <span class="word">minutes.</span></p>
+      <p><span class="word">Cool</span> <span class="word">completely</span> <span class="word">before</span> <span class="word">decorating.</span></p>
+      <p><span class="word">Enjoy</span> <span class="word">your</span> <span class="word">festive</span> <span class="word">gingerbread</span> <span class="word">cookies!</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

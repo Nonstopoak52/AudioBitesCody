@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latkes | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Latkes</h1>
+      <div class="recipe-meta">45 mins • Intermediate • 4.7★</div>
+      <img src="Images/latkes.jpg" alt="Crispy golden latkes" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>4 large russet potatoes, peeled</li>
+        <li>1 medium onion</li>
+        <li>2 large eggs</li>
+        <li>1/4 cup all-purpose flour</li>
+        <li>1 tsp salt</li>
+        <li>1/2 tsp black pepper</li>
+        <li>Vegetable oil for frying</li>
+        <li>Optional toppings: sour cream, applesauce</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe25.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Grate</span> <span class="word">the</span> <span class="word">potatoes</span> <span class="word">and</span> <span class="word">onion</span> <span class="word">using</span> <span class="word">a</span> <span class="word">box</span> <span class="word">grater</span> <span class="word">or</span> <span class="word">food</span> <span class="word">processor.</span></p>
+      <p><span class="word">Transfer</span> <span class="word">to</span> <span class="word">a</span> <span class="word">clean</span> <span class="word">towel</span> <span class="word">and</span> <span class="word">squeeze</span> <span class="word">out</span> <span class="word">as</span> <span class="word">much</span> <span class="word">liquid</span> <span class="word">as</span> <span class="word">possible.</span></p>
+      <p><span class="word">Place</span> <span class="word">the</span> <span class="word">mixture</span> <span class="word">in</span> <span class="word">a</span> <span class="word">bowl</span> <span class="word">and</span> <span class="word">add</span> <span class="word">eggs,</span> <span class="word">flour,</span> <span class="word">salt,</span> <span class="word">and</span> <span class="word">pepper.</span></p>
+      <p><span class="word">Mix</span> <span class="word">until</span> <span class="word">combined.</span></p>
+      <p><span class="word">Heat</span> <span class="word">vegetable</span> <span class="word">oil</span> <span class="word">in</span> <span class="word">a</span> <span class="word">large</span> <span class="word">skillet</span> <span class="word">over</span> <span class="word">medium-high</span> <span class="word">heat.</span></p>
+      <p><span class="word">Scoop</span> <span class="word">about</span> <span class="word">2</span> <span class="word">tablespoons</span> <span class="word">of</span> <span class="word">mixture</span> <span class="word">per</span> <span class="word">latke,</span> <span class="word">flatten,</span> <span class="word">and</span> <span class="word">fry</span> <span class="word">until</span> <span class="word">golden</span> <span class="word">brown.</span></p>
+      <p><span class="word">Flip</span> <span class="word">and</span> <span class="word">cook</span> <span class="word">the</span> <span class="word">other</span> <span class="word">side.</span></p>
+      <p><span class="word">Transfer</span> <span class="word">to</span> <span class="word">a</span> <span class="word">paper</span> <span class="word">towel-lined</span> <span class="word">plate.</span></p>
+      <p><span class="word">Serve</span> <span class="word">warm</span> <span class="word">with</span> <span class="word">sour</span> <span class="word">cream</span> <span class="word">or</span> <span class="word">applesauce.</span></p>
+      <p><span class="word">Enjoy</span> <span class="word">your</span> <span class="word">crispy,</span> <span class="word">savory</span> <span class="word">latkes!</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>

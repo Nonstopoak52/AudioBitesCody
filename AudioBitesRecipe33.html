@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avocado Toast with Poached Eggs | AudioBite</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img" />
+        <div class="logo-text">AudioBite</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="AudioBites.html">Home</a></li>
+          <li><a href="AudioBitesCat.html">Categories</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="recipe-header">
+      <h1 class="recipe-title">Avocado Toast with Poached Eggs</h1>
+      <div class="recipe-meta">10 mins • Easy • 5★</div>
+      <img src="Images/avocado-toast-poached-eggs.jpg" alt="Avocado Toast with Poached Eggs" class="recipe-image" />
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 slices sourdough bread</li>
+        <li>1 ripe avocado (mashed)</li>
+        <li>2 eggs</li>
+        <li>1 tablespoon white vinegar</li>
+        <li>Salt and pepper to taste</li>
+        <li>Red pepper flakes (optional)</li>
+        <li>Fresh herbs (optional)</li>
+      </ul>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src="recipe33.mp3"></audio>
+      <button class="play-btn" id="playButton">▶ Play Recipe</button>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-display">
+        <span class="current-time" id="currentTime">0:00</span>
+        <span class="duration" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="recipe-text" id="recipeText">
+      <p><span class="word">Toast</span> <span class="word">the</span> <span class="word">bread</span> <span class="word">until</span> <span class="word">crispy.</span></p>
+      <p><span class="word">Mash</span> <span class="word">the</span> <span class="word">avocado</span> <span class="word">with</span> <span class="word">salt</span> <span class="word">and</span> <span class="word">pepper.</span></p>
+      <p><span class="word">Poach</span> <span class="word">the</span> <span class="word">eggs</span> <span class="word">in</span> <span class="word">water</span> <span class="word">with</span> <span class="word">vinegar.</span></p>
+      <p><span class="word">Spread</span> <span class="word">avocado</span> <span class="word">on</span> <span class="word">toast,</span> <span class="word">top</span> <span class="word">with</span> <span class="word">poached</span> <span class="word">egg,</span> <span class="word">and</span> <span class="word">sprinkle</span> <span class="word">with</span> <span class="word">herbs</span> <span class="word">and</span> <span class="word">red</span> <span class="word">pepper</span> <span class="word">flakes.</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="audio.js" defer></script>
+</body>
+</html>
