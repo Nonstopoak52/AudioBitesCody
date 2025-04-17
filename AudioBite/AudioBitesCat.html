@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Categories | AudioBite</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #222;
+            border-bottom: 3px solid #ff9900;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ff9900;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #ff9900;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .category-btn {
+            background-color: #ff9900;
+            color: black;
+            border: none;
+            padding: 25px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+        }
+
+        .category-btn:hover {
+            background-color: #ffaa33;
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            padding: 30px;
+            background-color: #222;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img">
+                <div class="logo-text">AudioBite</div>
+            </div>
+            <nav>
+                <a href="AudioBites.html">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Browse All Categories</h1>
+        
+        <div class="categories-grid">
+            <!-- Row 1 -->
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatBre.html'">
+                <span class="category-icon">🍳</span>
+                Breakfast
+            </button>
+            
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatLun.html'">
+                <span class="category-icon">🥗</span>
+                Lunch
+            </button>
+            
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatDin.html'">
+                <span class="category-icon">🍽️</span>
+                Dinner
+            </button>
+            
+            <!-- Row 2 -->
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatHol.html'">
+                <span class="category-icon">🎄</span>
+                Holiday
+            </button>
+            
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatSpe.html'">
+                <span class="category-icon">🌟</span>
+                Specials
+            </button>
+            
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatFam.html'">
+                <span class="category-icon">👨‍🍳</span>
+                Famous
+            </button>
+            
+            <!-- Row 3 -->
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatMem.html'">
+                <span class="category-icon">🔒</span>
+                Member
+            </button>
+            
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatDer.html'">
+                <span class="category-icon">🍰</span>
+                Dessert
+            </button>
+            
+            <button class="category-btn" onclick="window.location.href='AudioBitesCatCul.html'">
+                <span class="category-icon">🌍</span>
+                Culture
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>\

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Breakfast | AudioBite</title>
+    <style>
+        /* [Same CSS Styles as Original] */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #222;
+            border-bottom: 3px solid #ff9900;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ff9900;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .recipe-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ff9900;
+        }
+
+        .recipe-meta {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .recipe-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #444;
+        }
+
+        .audio-player {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .play-btn {
+            background-color: #ff9900;
+            color: black;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: #555;
+            border-radius: 3px;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: #ff9900;
+            border-radius: 3px;
+            width: 0%;
+        }
+
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .recipe-text {
+            background-color: #222;
+            padding: 25px;
+            border-radius: 10px;
+            line-height: 1.8;
+        }
+
+        .word {
+            transition: all 0.2s;
+            padding: 2px 3px;
+            border-radius: 2px;
+        }
+
+        .current-word {
+            background-color: #ff9900;
+            color: black;
+            font-weight: bold;
+        }
+
+        .ingredients {
+            background-color: #222;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .ingredients h3 {
+            color: #ff9900;
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .ingredients ul {
+            padding-left: 20px;
+        }
+
+        .ingredients li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpg" alt="AudioBite Logo" class="logo-img">
+                <div class="logo-text">AudioBite</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="AudioBites.html">Home</a></li>
+                    <li><a href="AudioBitesCat.html">Categories</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Full English Breakfast</h1>
+            <div class="recipe-meta">30 min • Medium • 4.8★</div>
+            <img src="Images/english-breakfast.jpg" alt="English Breakfast Plate" class="recipe-image">
+        </div>
+
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 sausages</li>
+                <li>2 slices of back bacon</li>
+                <li>1 tomato, halved</li>
+                <li>1 cup baked beans</li>
+                <li>2 eggs</li>
+                <li>4 mushrooms, sliced</li>
+                <li>2 slices of toast</li>
+                <li>1 tbsp oil or butter</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+        </div>
+
+        <div class="audio-player">
+            <button class="play-btn" id="playButton">▶ Play Recipe</button>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="time-display">
+                <span class="current-time" id="currentTime">0:00</span>
+                <span class="duration" id="duration">3:00</span>
+            </div>
+        </div>
+
+        <div class="recipe-text" id="recipeText">
+            <p><span class="word">Heat</span> <span class="word">a</span> <span class="word">large</span> <span class="word">pan</span> <span class="word">over</span> <span class="word">medium</span> <span class="word">heat</span> <span class="word">with</span> <span class="word">oil</span> <span class="word">or</span> <span class="word">butter.</span></p>
+
+            <p><span class="word">Add</span> <span class="word">sausages</span> <span class="word">and</span> <span class="word">cook</span> <span class="word">for</span> <span class="word">10-12</span> <span class="word">minutes,</span> <span class="word">turning</span> <span class="word">occasionally.</span></p>
+
+            <p><span class="word">Add</span> <span class="word">bacon</span> <span class="word">and</span> <span class="word">cook</span> <span class="word">until</span> <span class="word">crisp,</span> <span class="word">about</span> <span class="word">4</span> <span class="word">minutes.</span></p>
+
+            <p><span class="word">In</span> <span class="word">a</span> <span class="word">separate</span> <span class="word">pan,</span> <span class="word">grill</span> <span class="word">tomatoes</span> <span class="word">cut-side</span> <span class="word">down</span> <span class="word">until</span> <span class="word">softened.</span></p>
+
+            <p><span class="word">Add</span> <span class="word">mushrooms</span> <span class="word">and</span> <span class="word">cook</span> <span class="word">until</span> <span class="word">golden.</span></p>
+
+            <p><span class="word">Heat</span> <span class="word">baked</span> <span class="word">beans</span> <span class="word">in</span> <span class="word">a</span> <span class="word">small</span> <span class="word">pot</span> <span class="word">until</span> <span class="word">warm.</span></p>
+
+            <p><span class="word">Fry</span> <span class="word">eggs</span> <span class="word">to</span> <span class="word">your</span> <span class="word">preference.</span></p>
+
+            <p><span class="word">Toast</span> <span class="word">the</span> <span class="word">bread</span> <span class="word">and</span> <span class="word">butter</span> <span class="word">if</span> <span class="word">desired.</span></p>
+
+            <p><span class="word">Assemble</span> <span class="word">everything</span> <span class="word">on</span> <span class="word">a</span> <span class="word">large</span> <span class="word">plate</span> <span class="word">and</span> <span class="word">serve</span> <span class="word">hot.</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AudioBite. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // [Same JavaScript Logic — no changes needed]
+        document.addEventListener('DOMContentLoaded', function() {
+            const playBtn = document.getElementById('playButton');
+            const progressBar = document.getElementById('progressBar');
+            const progressContainer = document.getElementById('progressContainer');
+            const currentTimeEl = document.getElementById('currentTime');
+            const durationEl = document.getElementById('duration');
+            const words = document.querySelectorAll('.word');
+
+            const audio = new Audio('Audio/english-breakfast-audio.mp3');
+            let isPlaying = false;
+
+            function formatTime(seconds) {
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+            }
+
+            function updateProgress() {
+                progressBar.style.width = (audio.currentTime / audio.duration) * 100 + '%';
+                currentTimeEl.textContent = formatTime(audio.currentTime);
+                highlightCurrentWord();
+            }
+
+            function highlightCurrentWord() {
+                const progressPercent = (audio.currentTime / audio.duration);
+                const wordIndex = Math.floor(progressPercent * words.length);
+                words.forEach((word, index) => {
+                    word.classList.remove('current-word');
+                    if (index === wordIndex) {
+                        word.classList.add('current-word');
+                        word.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                });
+            }
+
+            function setProgress(e) {
+                const width = this.clientWidth;
+                const clickX = e.offsetX;
+                audio.currentTime = (clickX / width) * audio.duration;
+            }
+
+            function togglePlay() {
+                if (isPlaying) {
+                    audio.pause();
+                    playBtn.textContent = '▶ Play Recipe';
+                } else {
+                    audio.play();
+                    playBtn.textContent = '❚❚ Pause';
+                }
+                isPlaying = !isPlaying;
+            }
+
+            playBtn.addEventListener('click', togglePlay);
+            progressContainer.addEventListener('click', setProgress);
+            audio.addEventListener('timeupdate', updateProgress);
+            audio.addEventListener('ended', () => {
+                playBtn.textContent = '▶ Play Recipe';
+                isPlaying = false;
+            });
+            audio.addEventListener('loadedmetadata', () => {
+                durationEl.textContent = formatTime(audio.duration);
+            });
+        });
+    </script>
+</body>
+</html>
